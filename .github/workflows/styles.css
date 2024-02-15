@@ -1,0 +1,159 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: lightslategrey;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Search input styles */
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Search button styles */
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color:  darkgray;
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Search results section styles */
+#searchResults {
+    flex-basis: 60%;
+}
+
+/* Book card styles */
+.book-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* Add this line to prevent content overflow */
+}
+
+/* Book image styles */
+.book-card img {
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+/* Book card hover effect */
+.book-card:hover img {
+    transform: scale(1.2); /* Increase the scale value for a larger pop-up effect */
+}
+
+/* Book title popup styles */
+.book-title-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.book-title-popup styles{
+    display: none; /* Initially hide the title popup */
+    position: absolute; /* Position the title popup relative to the book card */
+    top: 50%; /* Align the top of the popup to the middle of the book card */
+    left: 50%; /* Align the left of the popup to the middle of the book card */
+    transform: translate(-50%, -50%); /* Center the popup horizontally and vertically */
+    background-color: rgba(0, 0, 0, 0.8); /* Background color of the popup */
+    color: #fff; /* Text color of the popup */
+    padding: 5px 10px; /* Padding around the title */
+    border-radius: 5px; /* Rounded corners */
+    white-space: nowrap; /* Prevent title from wrapping to multiple lines */
+}
+
+
+/* Show book title popup on hover */
+.book-card:hover .book-title-popup {
+    display: block; /* Display the title popup on hover */
+}
+
+/* Book details section styles */
+#bookDetails {
+    flex-basis: 35%;
+    padding: 20px;
+    background-color: gainsboro;
+
+}
+
+/* Favorites panel styles */
+#favoritesPanel {
+    flex-basis: 35%;
+    padding: 20px;
+    background-color: gainsboro;
+}
+
+/* Favorite book card styles */
+.favorite-book-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Favorite book image styles */
+.favorite-book-card img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Add margin for spacing between image and text */
+    float: left; /* Float the image to the left */
+}
+
+/* Favorite book details styles */
+.favorite-book-details {
+    overflow: hidden; /* Prevent text from overflowing */
+}
+
+/* Favorite book title styles */
+.favorite-book-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Add margin bottom to separate title and author */
+}
+
+/* Favorite book author styles */
+.favorite-book-author {
+    font-size: 14px;
+    color: #888; /* Adjust color as needed */
+}
+
